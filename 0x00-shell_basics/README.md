@@ -1,3 +1,5 @@
+# SCRIPTS AND THEIR FUNCTIONS
+
 0-current_working_directory is the script that prints the current working directory to the screen.
 
 1-listit is the script for listing contents of a current directory.
