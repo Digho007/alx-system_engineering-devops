@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Function to remove PID file and exit
+terminator() {
+  rm /var/run/myscript.pid
+  exit
+}
+
+# Create PID file with current PID
+echo "$$" > /var/run/myscript.pid
+
+# Define signal handlers
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command"' SIGTERM
+trap 'terminator' SIGQUIT SIGTERM
+
+# Loop indefinitely and display message
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
+
