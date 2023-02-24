@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #-------
-# a shell script displays text string 10 times
+# Tells a story based on the contents of the `/etc/passwd` file.
 #-------
 filename="/etc/passwd"
 IFS=:
