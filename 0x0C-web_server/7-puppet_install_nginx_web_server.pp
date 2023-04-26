@@ -15,7 +15,7 @@ exec { 'update':
   line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4;',
 }
 -> file { '/var/www/html/index.html':
-  content => 'Holberton School',
+  content => 'Hello World!',
 }
 -> service { 'nginx':
   ensure  => running,
